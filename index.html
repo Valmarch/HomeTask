@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home-work 1</title>
+</head>
+<body>
+<style>
+    body {
+    margin: 0;
+
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color: #111;
+}
+
+h1 {
+    text-align: center;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.page {
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "header" "footer";
+    grid-template-rows: auto auto;
+    min-height: 100vh;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "sidebar1" "content" "sidebar2";
+    grid-template-columns: 0fr 3fr 0fr; 
+}
+
+.header {
+    padding: 20px;
+    background-color: #2725b5;
+    height: 50px;
+}
+
+.sidebar1 {
+    background-color: yellow;
+    width: 250px;
+    height: 621px;
+    text-align: center;
+}
+
+.sidebar2 {
+    background-color: yellow;
+    width: 250px;
+    height: 621px;
+    text-align: center;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: violet;
+    height: 50px;
+}
+
+.content {
+    min-width: 120px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+</style>
+    <div class="page">
+
+        <header class="header"></header>
+
+     <div class = "wrapper">
+
+        <div class = "sidebar1">
+            <p>Left sidebar</p>
+        </div>
+        
+
+        <main class="content">
+            <h1 class="title">List</h1>
+            <div class="text">
+                <ol>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis placeat quia quaerat.</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus ipsam laborum aliquid.</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem consequatur tenetur ex.</li>
+                </ol>
+            </div>
+        </main>
+
+        <div class = "sidebar2">
+            <p>Right sidebar</p>
+        </div>
+
+    </div>
+
+        <footer class="footer"></footer>
+    </div>
+
+</body>
+</html>
